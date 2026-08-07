@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initirl-scale=1.0">
+<title>Iron Temple Club | Disciplina. Fuerza. Transformación.</title>
+<meta name="description" content="Iron Temple Club — Gimnasio premium de alto rendimiento. Membresías exclusivas, entrenadores élite y una experiencia de transformación total.">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="robots" content="index, follow">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Ctext x='50' y='68' font-family='Arial Black, sans-serif' font-size='58' font-weight='900' fill='%23e0102b' text-anchor='middle'%3EIT%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph / SEO -->
+<meta property="og:title" content="Iron Temple Club">
+<meta property="og:description" content="Gimnasio premium de alto rendimiento. Disciplina, fuerza y transformación.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Iron Temple Club">
+<meta name="twitter:description" content="Gimnasio premium de alto rendimiento. Disciplina, fuerza y transformación.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop">
+
+<!-- Datos estructurados (SEO local) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "Iron Temple Club",
+  "description": "Gimnasio premium de alto rendimiento. Disciplina, fuerza y transformación.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Principal 123",
+    "addressLocality": "Ciudad"
+  },
+  "openingHours": ["Mo-Fr 05:00-23:00", "Sa 06:00-21:00", "Su 07:00-15:00"],
+  "priceRange": "$$"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader">
+  <div class="preloader-logo">IRON <span>TEMPLE</span></div>
+  <div class="preloader-bar"><span></span></div>
+</div>
+
+<!-- ============ NAV FLOTANTE PRINCIPAL ============ -->
+<header id="mainHeader" class="main-header">
+  <div class="header-inner">
+    <a href="#hero" class="logo">IRON <span>TEMPLE</span></a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#membresias">Membresías</a>
+      <a href="#entrenadores">Entrenadores</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#tienda">Tienda</a>
+      <a href="#transformaciones">Transformaciones</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="storeQuickBtn" aria-label="Abrir tienda">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <button class="btn btn-outline" id="loginBtn">Iniciar sesión</button>
+      <button class="btn btn-primary" id="registerBtn">Registrarse</button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="siteMain">
+
+<!-- ============ 1. HERO ============ -->
+<section id="hero" class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy" data-reveal>
+      <span class="eyebrow"><i class="fa-solid fa-fire"></i> Alto rendimiento · Elite training</span>
+      <h1 class="hero-title">IRON TEMPLE<span class="accent-dot">.</span></h1>
+      <p class="hero-slogan">Forja tu cuerpo. Domina tu mente. Conviértete en el mejor.</p>
+      <p class="hero-desc">El templo donde los atletas serios construyen su transformación. Entrenamiento de élite, tecnología de punta y una comunidad que no acepta excusas.</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary btn-lg" id="heroRegisterBtn">
+          <i class="fa-solid fa-user-plus"></i> Regístrate ahora
+        </button>
+        <button class="btn btn-ghost btn-lg" id="heroBookBtn">
+          <i class="fa-regular fa-calendar-check"></i> Agendar cita
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-number" data-count="2450">0</span><span class="stat-label">Miembros activos</span></div>
+        <div class="stat"><span class="stat-number" data-count="12">0</span><span class="stat-label">Años de historia</span></div>
+        <div class="stat"><span class="stat-number" data-count="98">0</span><span class="stat-label">% satisfacción</span></div>
+      </div>
+    </div>
+
+    <div class="hero-media" data-reveal>
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop" alt="Interior de Iron Temple Club" class="hero-img">
+      <div class="hero-media-glow"></div>
+      <div class="hero-badge">
+        <i class="fa-solid fa-shield-halved"></i>
+        <div><strong>Élite Certificada</strong><span>Coaches internacionales</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span></span> Desliza</div>
+</section>
+
+<!-- ============ 6. QUICK NAV SCROLLABLE ============ -->
+<section class="quicknav">
+  <div class="quicknav-track" id="quicknavTrack">
+    <button data-scroll="#membresias"><i class="fa-solid fa-crown"></i> Membresías</button>
+    <button data-scroll="#entrenadores"><i class="fa-solid fa-people-group"></i> Entrenadores</button>
+    <button data-scroll="#reservas"><i class="fa-regular fa-calendar-check"></i> Reservas</button>
+    <button data-scroll="#tienda"><i class="fa-solid fa-bag-shopping"></i> Tienda</button>
+    <button data-scroll="#asistencia" id="quicknavChat"><i class="fa-solid fa-headset"></i> Asistencia</button>
+    <button data-scroll="#promociones"><i class="fa-solid fa-tags"></i> Promociones</button>
+    <button data-scroll="#calendario-eventos"><i class="fa-solid fa-calendar-days"></i> Calendario</button>
+  </div>
+</section>
+
+<!-- ============ 7. ESLOGAN GRANDE ============ -->
+<section class="big-slogan">
+  <p data-reveal>NO ENTRENAMOS CUERPOS. <span>FORJAMOS VOLUNTADES.</span></p>
+</section>
+
+<!-- ============ 8. GALERÍA — RECORRIDO VISUAL (7 fotos) ============ -->
+<section id="galeria" class="gallery-section">
+  <div class="section-head" data-reveal>
+    <span class="section-eyebrow">Instalaciones</span>
+    <h2>Recorre el templo</h2>
+  </div>
+  <div class="gallery-grid" id="galleryGrid"><!-- JS render --></div>
+</section>
+
+<!-- ============ 9. ESLOGAN GRANDE ============ -->
+<section class="big-slogan alt">
+  <p data-reveal>EL DOLOR ES TEMPORAL. <span>LA DISCIPLINA ES ETERNA.</span></p>
+</section>
+
+<!-- ============ 10. MEMBRESÍAS ============ -->
+<section id="membresias" class="memberships-section">
+  <div class="section-head" data-reveal>
+    <span class="section-eyebrow">Planes</span>
+    <h2>Elige tu nivel de compromiso</h2>
+    <p>Tres niveles. Un solo estándar: excelencia.</p>
+  </div>
+  <div class="memberships-grid" id="membershipsGrid"><!-- JS render --></div>
+</section>
+
+<!-- ============ 11. ESLOGAN GRANDE ============ -->
+<section class="big-slogan">
+  <p data-reveal>AQUÍ NO SE VIENE A INTENTAR. <span>SE VIENE A LOGRAR.</span></p>
+</section>
+
+<!-- ============ 12. ENTRENADORES ============ -->
+<section id="entrenadores" class="trainers-section">
+  <div class="section-head" data-reveal>
+    <span class="section-eyebrow">Equipo élite</span>
+    <h2>Tus guías hacia la transformación</h2>
+  </div>
+  <div class="trainers-grid" id="trainersGrid"><!-- JS render --></div>
+</section>
+
+<!-- ============ 13. ESLOGAN GRANDE ============ -->
+<section class="big-slogan alt">
+  <p data-reveal>TU ÚNICO LÍMITE ES <span>LA VERSIÓN DE AYER.</span></p>
+</section>
+
+<!-- ============ 14. RESERVAS — 10 CLASES ============ -->
+<section id="reservas" class="booking-section">
+  <div class="section-head" data-reveal>
+    <span class="section-eyebrow">Sistema de reservas</span>
+    <h2>Reserva tu clase</h2>
+    <p>Diez disciplinas. Un solo objetivo: superarte.</p>
+  </div>
+  <div class="booking-grid" id="bookingGrid"><!-- JS render --></div>
+</section>
+
+<!-- ============ 15. ESLOGAN GRANDE ============ -->
+<section class="big-slogan">
+  <p data-reveal>EL ESPEJO NO MIENTE. <span>TRABAJA POR ÉL.</span></p>
+</section>
+
+<!-- ============ 16. TRANSFORMACIONES ============ -->
+<section id="transformaciones" class="transformations-section">
+  <div class="section-head" data-reveal>
+    <span class="section-eyebrow">Resultados reales</span>
+    <h2>Antes / Después</h2>
+    <p>Historias simuladas con fines demostrativos de portafolio.</p>
+  </div>
+  <div class="transformations-grid" id="transformationsGrid"><!-- JS render --></div>
+</section>
+
+<!-- ============ PROMOCIONES ============ -->
+<section id="promociones" class="promo-section">
+  <div class="section-head" data-reveal>
+    <span class="section-eyebrow">Promociones</span>
+    <h2>Ofertas activas</h2>
+  </div>
+  <div class="promo-grid" id="promoGrid"><!-- JS render --></div>
+</section>
+
+<!-- ============ CALENDARIO DE EVENTOS ============ -->
+<section id="calendario-eventos" class="calendar-section">
+  <div class="section-head" data-reveal>
+    <span class="section-eyebrow">Agenda</span>
+    <h2>Calendario de eventos</h2>
+    <p>Torneos, seminarios y retos exclusivos.</p>
+  </div>
+  <div class="calendar-wrap" data-reveal>
+    <div class="calendar-card">
+      <div class="calendar-header">
+        <button id="calPrev"><i class="fa-solid fa-chevron-left"></i></button>
+        <h3 id="calMonthLabel">Mes</h3>
+        <button id="calNext"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <div class="calendar-weekdays">
+        <span>D</span><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span>
+      </div>
+      <div class="calendar-grid" id="calendarGrid"><!-- JS render --></div>
+    </div>
+    <div class="calendar-details" id="calendarDetails">
+      <h4>Selecciona un día</h4>
+      <p>Toca una fecha marcada para ver el evento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG FITNESS ============ -->
+<section id="blog" class="blog-section">
+  <div class="section-head" data-reveal>
+    <span class="section-eyebrow">Blog</span>
+    <h2>Conocimiento de élite</h2>
+  </div>
+  <div class="blog-grid" id="blogGrid"><!-- JS render --></div>
+</section>
+
+<!-- ============ TESTIMONIOS CON VIDEO ============ -->
+<section id="testimonios" class="testimonials-section">
+  <div class="section-head" data-reveal>
+    <span class="section-eyebrow">Voces del templo</span>
+    <h2>Testimonios</h2>
+  </div>
+  <div class="testimonials-track" id="testimonialsTrack"><!-- JS render --></div>
+</section>
+
+<!-- ============ 17. SOBRE EL GIMNASIO ============ -->
+<section id="nosotros" class="about-section">
+  <div class="about-media" data-reveal>
+    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1000&auto=format&fit=crop" alt="Atleta entrenando en Iron Temple Club" loading="lazy">
+  </div>
+  <div class="about-copy" data-reveal>
+    <span class="section-eyebrow">Sobre nosotros</span>
+    <h2>Más que un gimnasio. Un templo de disciplina.</h2>
+    <p>Iron Temple Club nació para quienes no se conforman con lo mínimo. Equipamiento de nivel profesional, coaches certificados internacionalmente y una comunidad que exige lo mejor de cada quien.</p>
+    <p>Diseñado para atletas, ejecutivos, competidores y cualquier persona con una mentalidad de alto rendimiento que busca resultados reales, medibles y sostenibles.</p>
+    <ul class="about-points">
+      <li><i class="fa-solid fa-check"></i> Equipamiento importado de última generación</li>
+      <li><i class="fa-solid fa-check"></i> Coaches certificados internacionalmente</li>
+      <li><i class="fa-solid fa-check"></i> Planes 100% personalizados</li>
+      <li><i class="fa-solid fa-check"></i> Comunidad de alto rendimiento</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CONTADOR DE CALORÍAS (público / demo) ============ -->
+<section id="calorias-demo" class="calorie-teaser">
+  <div class="calorie-teaser-inner" data-reveal>
+    <div>
+      <span class="section-eyebrow">Herramienta</span>
+      <h2>Contador de calorías</h2>
+      <p>Disponible dentro de tu panel de usuario. Regístrate para llevar el control completo de tu progreso.</p>
+      <button class="btn btn-primary" id="calorieCTA">Ir a mi panel</button>
+    </div>
+    <div class="calorie-visual"><i class="fa-solid fa-fire-flame-curved"></i></div>
+  </div>
+</section>
+
+<!-- ============ 18. UBICACIÓN Y HORARIOS ============ -->
+<section id="ubicacion" class="location-section">
+  <div class="section-head" data-reveal>
+    <span class="section-eyebrow">Visítanos</span>
+    <h2>Ubicación & horarios</h2>
+  </div>
+  <div class="location-grid">
+    <div class="location-map" data-reveal>
+      <iframe
+        title="Ubicación Iron Temple Club"
+        src="https://www.google.com/maps?q=Av.%20Principal%20123%2C%20Ciudad&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="location-info" data-reveal>
+      <h3>Iron Temple Club</h3>
+      <p><i class="fa-solid fa-location-dot"></i> Av. Principal 123, Ciudad</p>
+      <div class="schedule-list">
+        <div><span>Lunes – Viernes</span><strong>05:00 – 23:00</strong></div>
+        <div><span>Sábado</span><strong>06:00 – 21:00</strong></div>
+        <div><span>Domingo</span><strong>07:00 – 15:00</strong></div>
+      </div>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="Google Maps"><i class="fa-solid fa-map-location-dot"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo">IRON <span>TEMPLE</span></span>
+      <p>Disciplina. Fuerza. Transformación.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h5>Explora</h5>
+        <a href="#membresias">Membresías</a>
+        <a href="#entrenadores">Entrenadores</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#tienda">Tienda</a>
+      </div>
+      <div>
+        <h5>Club</h5>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#blog">Blog</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#ubicacion">Ubicación</a>
+      </div>
+      <div>
+        <h5>Síguenos</h5>
+        <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Iron Temple Club. Proyecto ficticio de portafolio.</p>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOTANTE ============ -->
+<a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Escríbenos por WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- ============ CHAT DE ASISTENCIA ============ -->
+<div id="chatWidget" class="chat-widget">
+  <button class="chat-toggle" id="chatToggle" aria-label="Abrir chat de asistencia">
+    <i class="fa-solid fa-headset"></i>
+  </button>
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-panel-header">
+      <div><strong>Asistencia Iron Temple</strong><span class="chat-status"><i class="fa-solid fa-circle"></i> En línea</span></div>
+      <button id="chatClose" aria-label="Cerrar chat"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <form class="chat-input-row" id="chatForm">
+      <input type="text" id="chatInput" placeholder="Escribe tu mensaje..." autocomplete="off">
+      <button type="submit" aria-label="Enviar"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ MODAL: REGISTRO / LOGIN ============ -->
+<div class="modal-overlay" id="authModal">
+  <div class="modal-box auth-box">
+    <button class="modal-close" data-close-modal><i class="fa-solid fa-xmark"></i></button>
+    <div class="auth-tabs">
+      <button class="auth-tab active" data-tab="register">Crear cuenta</button>
+      <button class="auth-tab" data-tab="login">Iniciar sesión</button>
+    </div>
+    <form id="registerForm" class="auth-form">
+      <label>Nombre completo<input type="text" required placeholder="Tu nombre"></label>
+      <label>Correo electrónico<input type="email" required placeholder="tucorreo@ejemplo.com"></label>
+      <label>Teléfono<input type="tel" required placeholder="+00 000 000 000"></label>
+      <label>Contraseña<input type="password" required placeholder="••••••••"></label>
+      <label>Código de referido (opcional)<input type="text" placeholder="Ej. IRON-4821"></label>
+      <button type="submit" class="btn btn-primary btn-block">Crear mi cuenta</button>
+    </form>
+    <form id="loginForm" class="auth-form" hidden>
+      <label>Correo electrónico<input type="email" required placeholder="tucorreo@ejemplo.com"></label>
+      <label>Contraseña<input type="password" required placeholder="••••••••"></label>
+      <button type="submit" class="btn btn-primary btn-block">Entrar a mi panel</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ 2/3. PANEL DE USUARIO ============ -->
+<div class="panel-overlay" id="dashboardPanel">
+  <div class="panel-box">
+    <aside class="panel-sidebar">
+      <div class="panel-user">
+        <div class="panel-avatar"><i class="fa-solid fa-user"></i></div>
+        <div><strong id="panelUserName">Atleta Iron</strong><span id="panelUserPlan">Plan Pro</span></div>
+      </div>
+      <nav class="panel-nav">
+        <button class="active" data-panel-tab="rutina"><i class="fa-solid fa-dumbbell"></i> Mi rutina</button>
+        <button data-panel-tab="calendario"><i class="fa-solid fa-calendar-star"></i> Calendario Elite</button>
+        <button data-panel-tab="calorias"><i class="fa-solid fa-fire"></i> Contador de calorías</button>
+        <button data-panel-tab="pagos"><i class="fa-solid fa-credit-card"></i> Pagos realizados</button>
+        <button data-panel-tab="dieta"><i class="fa-solid fa-file-arrow-down"></i> Dieta descargable</button>
+        <button data-panel-tab="notificaciones"><i class="fa-solid fa-bell"></i> Notificaciones <span class="nav-badge" id="notifBadge">3</span></button>
+      </nav>
+      <button class="btn btn-outline btn-block panel-close-btn" data-close-panel><i class="fa-solid fa-arrow-left"></i> Volver al sitio</button>
+    </aside>
+    <div class="panel-content">
+      <button class="panel-mobile-close" data-close-panel><i class="fa-solid fa-xmark"></i></button>
+      <button class="panel-mobile-menu" id="panelMobileMenu" aria-label="Abrir menú del panel"><i class="fa-solid fa-bars"></i> Menú</button>
+
+      <div class="panel-tab-content active" id="tab-rutina"><!-- JS render --></div>
+      <div class="panel-tab-content" id="tab-calendario"><!-- JS render --></div>
+      <div class="panel-tab-content" id="tab-calorias"><!-- JS render --></div>
+      <div class="panel-tab-content" id="tab-pagos"><!-- JS render --></div>
+      <div class="panel-tab-content" id="tab-dieta"><!-- JS render --></div>
+      <div class="panel-tab-content" id="tab-notificaciones"><!-- JS render --></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 4/5. TIENDA ============ -->
+<div class="store-overlay" id="storePanel">
+  <div class="store-box">
+    <div class="store-header">
+      <h2><i class="fa-solid fa-bag-shopping"></i> Tienda Iron Temple</h2>
+      <div class="store-header-actions">
+        <button class="icon-btn" id="storeCartBtn">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="storeCartBadge">0</span>
+        </button>
+        <button class="modal-close" data-close-store><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+
+    <div class="store-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="storeSearchInput" placeholder="Buscar productos: proteína, ropa, accesorios...">
+    </div>
+
+    <div class="store-filters" id="storeFilters"></div>
+
+    <div class="store-grid" id="storeGrid"><!-- JS render --></div>
+
+    <!-- Carrito -->
+    <div class="cart-drawer" id="cartDrawer">
+      <div class="cart-drawer-header">
+        <h3>Tu carrito</h3>
+        <button id="cartClose" aria-label="Cerrar carrito"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+        <button class="btn btn-primary btn-block" id="cartCheckoutBtn">Comprar ahora</button>
+        <button class="btn btn-outline btn-block" id="cartSaveBtn">Guardar para después</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODAL: DETALLE DE MEMBRESÍA ============ -->
+<div class="modal-overlay" id="membershipModal">
+  <div class="modal-box membership-box" id="membershipModalContent"><!-- JS render --></div>
+</div>
+
+<!-- ============ MODAL: RESERVA DE CLASE ============ -->
+<div class="modal-overlay" id="bookingModal">
+  <div class="modal-box booking-box" id="bookingModalContent"><!-- JS render --></div>
+</div>
+
+<!-- ============ TOASTS ============ -->
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/store.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/booking.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/membership.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>
